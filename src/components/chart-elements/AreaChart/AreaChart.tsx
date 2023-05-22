@@ -161,4 +161,6 @@ const AreaChart = React.forwardRef<HTMLDivElement, AreaChartProps>((props, ref) 
   );
 });
 
+AreaChart.displayName = "AreaChart";
+
 export default AreaChart;

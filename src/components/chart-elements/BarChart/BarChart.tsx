@@ -183,4 +183,6 @@ const BarChart = React.forwardRef<HTMLDivElement, BarChartProps>((props, ref) =>
   );
 });
 
+BarChart.displayName = "BarChart";
+
 export default BarChart;
