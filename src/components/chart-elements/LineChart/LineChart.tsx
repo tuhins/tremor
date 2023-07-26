@@ -69,21 +69,6 @@ const LineChart = React.forwardRef<HTMLDivElement, LineChartProps>((props, ref) 
       <ResponsiveContainer className="h-full w-full">
         {data?.length ? (
           <ReChartsLineChart data={data}>
-            {showGridLines ? (
-              <CartesianGrid
-                className={tremorTwMerge(
-                  // common
-                  "stroke-1",
-                  // light
-                  "stroke-tremor-content-subtle",
-                  // dark
-                  "dark:stroke-dark-tremor-content-subtle",
-                )}
-                strokeDasharray="3 3"
-                horizontal={true}
-                vertical={false}
-              />
-            ) : null}
             <XAxis
               hide={!showXAxis}
               dataKey={index}
